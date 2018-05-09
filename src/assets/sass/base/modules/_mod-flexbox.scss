@@ -1,0 +1,52 @@
+/* != Framework Module - flex */
+@mixin flexBase {
+  display:flex;
+}
+
+%flexBase {
+  @include flexBase;
+}
+
+// flexList - List of items that wrap onto multiple lines
+@mixin flexList {
+  flex-wrap:wrap;
+  align-items:stretch;
+}
+
+%flexList {
+  @include flexList;
+}
+
+// flexRow - Row of items that don't wrap
+@mixin flexRow {
+  align-items:stretch;
+}
+
+// naturalflexRow - Row of items that don't wrap and also don't stretch vertically
+@mixin flexNaturalRow {
+  align-items:flex-start;
+}
+
+@mixin flexNaturalAlignment {
+  align-items: flex-start;
+}
+
+// flexCol - Flexbox column of items
+@mixin flexCol {
+  flex-direction:column;
+}
+
+%flexCol {
+  @include flexCol;
+}
+
+// flexCentreContent - Flex item that centres content vertically and horizontally
+@mixin flexCentreContent {
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+
+  > * {
+    max-width:100%;
+  }
+}

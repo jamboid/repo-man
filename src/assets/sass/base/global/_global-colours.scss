@@ -1,0 +1,51 @@
+/* != Framework - Global Colour Settings */
+
+/* !== COLOUR-DESCRIPTIVE VARIABLES */
+$clrNone: none;
+$clrInvsibile: rgba(0,0,0,0);
+
+/* ! Black to White */
+$clrBlack: #000;
+$clrDarkGrey: #333;
+$clrGrey: #666;
+$clrLightGrey: #999;
+$clrPaleGrey: #ccc;
+$clrVeryLightGrey: #efefef;
+$clrOffWhite: #F2F1F4;
+$clrWhite: #FFF;
+
+/* ! Blues */
+$clrBlue: #428BCA;
+$clrLightBlue:#78a0da;
+
+/* ! Reds */
+$clrRed:#FF7979;
+
+/* ! Greens */
+$clrGreen: #87AE39;
+
+/* ! Oranges */
+$clrOrange:#bc4100;
+
+/* !== Gradients */
+
+$clrDarkGreyGradient: linear-gradient($clrGrey, $clrDarkGrey);
+$clrDarkGreyGradientHover: linear-gradient(darken($clrGrey,10), darken($clrDarkGrey, 10));
+
+$clrBlueGradient:linear-gradient(lighten($clrBlue, 15), $clrBlue);
+$clrBlueGradientHover:linear-gradient($clrBlue, darken($clrBlue, 15));
+
+/* !=== SEMANTIC VARIABLES */
+/* NOTE: Use COLOUR-DESCRIPTIVE VARIABLES to define these. Don't add hex/rgb/rgba values directly */
+
+
+$clrSchemeColour: $clrGrey;
+
+/* Document */
+$clrBodyBack: $clrDarkGrey;
+$clrBodyText: $clrBlack;
+
+/* Forms */
+$clrFormsFieldBack: $clrLightGrey;
+$clrFormsSearchBorder:$clrLightGrey;
+$clrFormsFileBack:$clrVeryLightGrey;
