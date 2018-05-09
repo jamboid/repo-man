@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import get from './modules/api';
+import buildGithubAPIQuery from './modules/querybuilder';
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const queryResult = get('Query details');
+    const queryResult = get(buildGithubAPIQuery('jamboid'));
     this.setState((prevState) => {
       return {
         queryresults: queryResult

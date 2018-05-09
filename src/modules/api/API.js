@@ -2,8 +2,8 @@
 
 // Abstract Ajax Get function
 export function get(query) {
-  const processedQuery = "Query Processed: " + query;
-  return processedQuery
+  const queryData = "Query Processed: " + query;
+  return queryData;
 }
 
 export default get;
