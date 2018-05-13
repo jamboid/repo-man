@@ -1,0 +1,101 @@
+/* != Framework - ALL */
+/*
+NOTE: Imports all other files in the /framework folder
+      Files should be imported in the order indicated
+*/
+/* !== Global Settings */
+/* != Framework - Global Typography Settings */
+/* !== Typography */
+/* ! Font Families */
+/* ! Font Weights */
+/* ! Base Font Values - used as the default for things like basic paragraphs, lists, etc. */
+/* != Framework - Global Colour Settings */
+/* !== COLOUR-DESCRIPTIVE VARIABLES */
+/* ! Black to White */
+/* ! Blues */
+/* ! Reds */
+/* ! Greens */
+/* ! Oranges */
+/* !== Gradients */
+/* !=== SEMANTIC VARIABLES */
+/* NOTE: Use COLOUR-DESCRIPTIVE VARIABLES to define these. Don't add hex/rgb/rgba values directly */
+/* Document */
+/* Forms */
+/* != Global - Media Queries */
+/* !== Breakpoints */
+/*
+What are the parameter values for each Media Query?
+- Set these values without units, these'll be added in the mixin
+*/
+/*
+
+MQ Names - Star Wars Theme
+==========================
+
+Use the A-List names for main breakpoints and the B-List names for BPs for more specific rules and edge cases
+
+Small
+------------
+
+- A-List
+$bpYoda
+$bpArtoo
+
+- B-List
+$bpEwok
+$bpJawa
+
+Medium
+------------
+
+- A-List
+$bpLeia
+$bpLuke
+$bpHan
+$bpThreepio
+
+- B-List
+$bpLando
+$bpBoba
+$bpLobot
+
+
+Large
+------------
+
+- A-List
+$bpVader
+$bpChewie
+
+- B-List
+$bpJabba
+$bpWampa
+$bpRancor
+$bpSarlacc
+
+
+Very Large
+------------
+
+- A-List
+$bpATAT
+$bpStarDestroyer
+$bpDeathStar
+
+*/
+/* !== Modules */
+/* != Base Module - UNITS */
+/* CONVERT PIXELS TO EMS */
+/*
+Parameters: @pixels value (no units), optional @context value (no units) e.g. if you are calculating padding on an element that has a font size applied already.
+*/
+/* != Base Module - MATHS */
+/* !== Add 1 to a number */
+/* !== Subtract 1 from a number */
+/* != Framework Module - MEDIA QUERIES */
+/*
+ * @mixins
+ */
+/* !== Media Query mixin - includes Retina display */
+/* != Framework Module - flex */
+/* != Base Module - Typography */
