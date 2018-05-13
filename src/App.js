@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import SearchForm from './components/searchform';
 //import get from './modules/api';
-import buildGithubAPIQuery from './modules/querybuilder';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,24 +11,6 @@ class App extends Component {
       mode: 'loading',
       queryresults: {}
     };
-  }
-
-  componentDidMount() {
-
-    fetch(buildGithubAPIQuery('jamboid'))
-    .then((response) => {
-      return response.json();
-    })
-    .then((results) => {
-      console.log(results);
-
-      this.setState((prevState) => {
-        return {
-          queryresults: results
-        };
-      });
-    })
-    .catch(console.error);
   }
 
   render() {
@@ -43,6 +25,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <SearchForm></SearchForm>
       </div>
     );
   }
