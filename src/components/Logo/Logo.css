@@ -99,28 +99,7 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* !== Media Query mixin - includes Retina display */
 /* != Framework Module - flex */
 /* != Base Module - Typography */
-.cp_App {
-  text-align: center; }
-  .cp_App__header {
-    background: #FFF; }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white; }
-
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.cp_Logo {
+  margin: 1.25em auto; }
+  .cp_Logo__image {
+    max-width: 50vw; }

@@ -1,0 +1,9 @@
+@import "../../assets/sass/base/all";
+
+.cp_Logo {
+  margin:em(20) auto;
+
+  &__image {
+    max-width:50vw;
+  }
+}

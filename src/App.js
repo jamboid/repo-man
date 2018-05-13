@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SearchForm from './components/searchform';
+import SearchForm from './components/SearchForm';
 //import get from './modules/api';
-import logo from './logo.svg';
+import Logo from './components/Logo';
 import './App.css';
 
 class App extends Component {
@@ -15,11 +15,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">App that lets you enter a Github username <br />and displays the list of associated repos</h1>
-          <p>Uses the Github REST API</p>
+      <div className="cp_App">
+        <header className="cp_App__header">
+          <Logo></Logo>
+          <SearchForm></SearchForm>
+
           <p>{ this.state.queryresults.length } repos</p>
         </header>
         <p className="App-intro">

@@ -1,5 +1,11 @@
-.App {
+@import "./assets/sass/base/all";
+
+.cp_App {
   text-align: center;
+
+  &__header {
+    background:$clrWhite;
+  }
 }
 
 .App-logo {
