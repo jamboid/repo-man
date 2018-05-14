@@ -1,7 +1,8 @@
 // API Module
 
-function handleError(_res) {
-  return _res.ok ? _res : Promise.reject(_res.statusText);
+
+function handleError(res) {
+  return res.ok ? res : Promise.reject(res.statusText);
 }
 
 function handleContentType(response) {

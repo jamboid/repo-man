@@ -9,8 +9,21 @@ class App extends Component {
     super(props);
     this.state = {
       mode: 'loading',
+      username: 'enter a username',
       queryresults: {}
     };
+
+    this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
+    this.handleSearchChange = this.handleSearchChange.bind(this);
+  }
+
+  handleSearchSubmit () {
+    //this.setState({'username': username})
+    console.log('Searching for... ' + this.state.username);
+  }
+
+  handleSearchChange (username) {
+    this.setState({'username': username});
   }
 
   render() {
@@ -18,14 +31,12 @@ class App extends Component {
       <div className="cp_App">
         <header className="cp_App__header">
           <Logo></Logo>
-          <SearchForm></SearchForm>
-
-          <p>{ this.state.queryresults.length } repos</p>
+          <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} />
+          <p>Usename: {this.state.username}</p>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <SearchForm></SearchForm>
       </div>
     );
   }
