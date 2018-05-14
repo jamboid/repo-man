@@ -19,7 +19,11 @@ class App extends Component {
 
   handleSearchSubmit () {
     //this.setState({'username': username})
-    console.log('Searching for... ' + this.state.username);
+    if(this.state.username !== '') {
+      console.log('start search...');
+    } else {
+      console.log('do nothing');
+    }
   }
 
   handleSearchChange (username) {
