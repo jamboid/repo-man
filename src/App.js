@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchForm from './components/SearchForm';
+
 //import get from './modules/api';
 import Logo from './components/Logo';
 import './App.css';
@@ -8,7 +9,7 @@ class App extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      mode: 'loading',
+      mode: 'start',
       username: '',
       queryresults: {}
     };
