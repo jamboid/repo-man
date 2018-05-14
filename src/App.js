@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       mode: 'loading',
-      username: 'enter a username',
+      username: '',
       queryresults: {}
     };
 
@@ -31,7 +31,7 @@ class App extends Component {
       <div className="cp_App">
         <header className="cp_App__header">
           <Logo></Logo>
-          <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} />
+          <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} fieldTextPlaceholder={'Enter a username...'} />
           <p>Usename: {this.state.username}</p>
         </header>
         <p className="App-intro">

@@ -22,7 +22,7 @@ class SearchForm extends Component {
   render() {
     return (
       <form className="cp_SearchForm" onSubmit={this.handleSubmit}>
-        <input className="cp_SearchForm__text" name="searchTerm" onChange={this.handleChange} type="search" />
+        <input className="cp_SearchForm__text" name="searchTerm" onChange={this.handleChange} placeholder={this.props.fieldTextPlaceholder} type="search" />
         <input className="cp_SearchForm__button" type="submit" value="Search" />
       </form>
     );
