@@ -99,3 +99,22 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* !== Media Query mixin - includes Retina display */
 /* != Framework Module - flex */
 /* != Base Module - Typography */
+.cp_SearchForm {
+  margin: 0 auto;
+  display: flex;
+  max-width: 25em; }
+  .cp_SearchForm__text, .cp_SearchForm__button {
+    font-size: 1.125em;
+    -webkit-appearance: none;
+    padding: 0.5em 0.9375em;
+    box-shadow: none;
+    border: 2px solid #4A90E2; }
+  .cp_SearchForm__text {
+    flex: 1 1 auto;
+    border-radius: 5px 0 0 5px; }
+  .cp_SearchForm__button {
+    flex: 0 0 auto;
+    background: #4A90E2;
+    color: #FFF;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer; }

@@ -2,6 +2,7 @@
 
 
 function handleError(res) {
+  console.log(res);
   return res.ok ? res : Promise.reject(res.statusText);
 }
 
@@ -16,16 +17,19 @@ function handleContentType(response) {
 }
 
 // Abstract Ajax Get function
-export function get(query) {
+export function getJSON(query) {
   return window.fetch(query, {
     method: 'GET',
     headers: new Headers({
         'Accept': 'application/json'
-    })
+    }),
+    simple: true
   })
   .then(handleError)
-  .then(this._handleContentType)
-  .catch( error => { throw new Error(error) })
+  .then(handleContentType)
+  .catch((err) => {
+    console.log(err);
+  });
 }
 
-export default get;
+export default getJSON;

@@ -1,5 +1,29 @@
 @import "../../assets/sass/base/all";
 
 .cp_SearchForm {
-  
+  margin:0 auto;
+  @include flexBase;
+  max-width:em(400);
+
+  &__text,
+  &__button {
+    font-size:em(18);
+    -webkit-appearance:none;
+    padding:em(8) em(15);
+    box-shadow:none;
+    border:2px solid $clrBlue;
+  }
+
+  &__text {
+    flex:1 1 auto;
+    border-radius:5px 0 0 5px;
+  }
+
+  &__button {
+    flex:0 0 auto;
+    background:$clrBlue;
+    color:$clrWhite;
+    border-radius:0 5px 5px 0;
+    cursor: pointer;
+  }
 }
