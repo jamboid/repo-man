@@ -2,18 +2,17 @@
 
 
 function handleError(res) {
-  console.log(res);
   return res.ok ? res : Promise.reject(res.statusText);
 }
 
 function handleContentType(response) {
-    const contentType = response.headers.get('content-type');
+  const contentType = response.headers.get('content-type');
 
-    if (contentType && contentType.includes('application/json')) {
-        return response.json();
-    }
+  if (contentType && contentType.includes('application/json')) {
+      return response.json();
+  }
 
-    return Promise.reject('Oops, we haven\'t got JSON!');
+  return Promise.reject('Oops, we haven\'t got JSON!');
 }
 
 // Abstract Ajax Get function

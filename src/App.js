@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchForm from './components/SearchForm';
+import ResultsList from './components/ResultsList';
 import getJSON from './modules/api';
 import buildGithubAPIQuery from './modules/querybuilder';
 
@@ -24,7 +25,7 @@ class App extends Component {
     //this.setState({'username': username})
     if(this.state.username !== '') {
       console.log('start search...');
-      const repos = getJSON(buildGithubAPIQuery(this.state.username))
+      getJSON(buildGithubAPIQuery(this.state.username))
       .then(results => {
         this.setState({'queryresults': results});
       });
@@ -38,8 +39,13 @@ class App extends Component {
     this.setState({'username': username});
   }
 
+  buildRepoList (results) {
+
+  }
+
   render() {
     const results = this.state.queryresults;
+    console.log(results);
 
     return (
       <div className="cp_App">
@@ -48,11 +54,9 @@ class App extends Component {
           <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} fieldTextPlaceholder={'Enter a username...'} />
         </header>
         <section className="cp_SearchResults ">
-          {results.map((result) =>
-            <p>{result.name}</p>
-          )}
+          <ResultsList results={this.state.queryresults} />
         </section>
-      </div>
+          </div>
     );
   }
 }
