@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import RepoCard from '../RepoCard'
+
 import './ResultsList.css';
 
 class ResultsList extends Component {
@@ -8,7 +10,7 @@ class ResultsList extends Component {
     return (
       <section className="cp_ResultsList">
         {this.props.results.map((repo) =>
-          <p key={repo.id}><a href={repo.url}>{repo.name}</a></p>
+          <RepoCard key={repo.id} name={repo.name} url={repo.url} />
         )}
       </section>
     );
