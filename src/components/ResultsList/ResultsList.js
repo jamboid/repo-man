@@ -6,11 +6,11 @@ import './ResultsList.css';
 class ResultsList extends Component {
   render() {
     return (
-      <div className="cp_ResultsList">
+      <section className="cp_ResultsList">
         {this.props.results.map((repo) =>
-          <p key={repo.id}>{repo.name}</p>
+          <p key={repo.id}><a href={repo.url}>{repo.name}</a></p>
         )}
-      </div>
+      </section>
     );
   }
 }

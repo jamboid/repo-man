@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import SearchForm from './components/SearchForm';
 import ResultsList from './components/ResultsList';
-import getJSON from './modules/api';
-import buildGithubAPIQuery from './modules/querybuilder';
+import getJSON from './modules/API';
+import buildGithubAPIQuery from './modules/QueryBuilder';
 
 //import get from './modules/api';
 import Logo from './components/Logo';
@@ -31,7 +31,8 @@ class App extends Component {
       });
 
     } else {
-      console.log('do nothing');
+      // console.log('do nothing');
+      this.setState({'queryresults': []});
     }
   }
 
@@ -39,24 +40,15 @@ class App extends Component {
     this.setState({'username': username});
   }
 
-  buildRepoList (results) {
-
-  }
-
   render() {
-    const results = this.state.queryresults;
-    console.log(results);
-
     return (
       <div className="cp_App">
         <header className="cp_App__header">
           <Logo></Logo>
           <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} fieldTextPlaceholder={'Enter a username...'} />
         </header>
-        <section className="cp_SearchResults ">
-          <ResultsList results={this.state.queryresults} />
-        </section>
-          </div>
+        <ResultsList results={this.state.queryresults} />
+      </div>
     );
   }
 }

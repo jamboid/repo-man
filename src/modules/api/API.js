@@ -15,6 +15,23 @@ function handleContentType(response) {
   return Promise.reject('Oops, we haven\'t got JSON!');
 }
 
+function processData(rawData) {
+  const processedData = [];
+
+  for (var i = 0; i < rawData.length; i++) {
+    const rawRepo = rawData[i];
+    const processedRepo = {};
+
+    processedRepo.id = rawRepo.id;
+    processedRepo.name = rawRepo.name;
+    processedRepo.url = rawRepo.url;
+
+    processedData.push(processedRepo);
+  }
+
+  return processedData
+}
+
 // Abstract Ajax Get function
 export function getJSON(query) {
   return window.fetch(query, {
@@ -26,6 +43,7 @@ export function getJSON(query) {
   })
   .then(handleError)
   .then(handleContentType)
+  .then(processData)
   .catch((err) => {
     console.log(err);
   });
