@@ -16,6 +16,7 @@ function handleContentType(response) {
 }
 
 function processData(rawData) {
+  console.log(rawData);
   const processedData = [];
 
   for (var i = 0; i < rawData.length; i++) {
@@ -24,7 +25,7 @@ function processData(rawData) {
 
     processedRepo.id = rawRepo.id;
     processedRepo.name = rawRepo.name;
-    processedRepo.url = rawRepo.url;
+    processedRepo.url = rawRepo.html_url;
 
     processedData.push(processedRepo);
   }
