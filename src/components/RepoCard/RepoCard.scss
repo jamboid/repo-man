@@ -1,0 +1,12 @@
+@import "../../assets/sass/base/all";
+
+.cp_RepoCard {
+  background:$clrWhite;
+  padding:em(15);
+  box-shadow:0 3px 15px rgba($clrBlack,0.1);
+  border-radius: 10px;
+
+  &__title {
+    margin:0 0 1em;
+  }
+}

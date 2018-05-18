@@ -99,3 +99,10 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* !== Media Query mixin - includes Retina display */
 /* != Framework Module - flex */
 /* != Base Module - Typography */
+.cp_ResultsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.875em;
+  padding: 1.875em;
+  margin-top: 2.5em;
+  background: #D8D8D8; }

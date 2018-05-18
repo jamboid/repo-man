@@ -23,8 +23,11 @@ function processData(rawData) {
     const rawRepo = rawData[i];
     const processedRepo = {};
 
+    console.log(rawRepo);
+
     processedRepo.id = rawRepo.id;
     processedRepo.name = rawRepo.name;
+    processedRepo.description = rawRepo.description;
     processedRepo.url = rawRepo.html_url;
 
     processedData.push(processedRepo);

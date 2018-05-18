@@ -10,7 +10,7 @@ class ResultsList extends Component {
     return (
       <section className="cp_ResultsList">
         {this.props.results.map((repo) =>
-          <RepoCard key={repo.id} name={repo.name} url={repo.url} />
+          <RepoCard key={repo.id} name={repo.name} description={repo.description} url={repo.url} />
         )}
       </section>
     );
