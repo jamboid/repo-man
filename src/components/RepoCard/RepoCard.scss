@@ -3,14 +3,34 @@
 .cp_RepoCard {
   background:$clrWhite;
   max-width:em(700);
-  margin:0 auto;
-  padding:em(15);
+  margin:0 auto em(20);
   box-shadow:0 3px 15px rgba($clrBlack,0.1);
   border-radius: 7px;
   display: flex;
 
+  > * {
+    padding:em(12) em(20);
+  }
+
+  &__details {
+    flex-grow:1;
+    text-align: left;
+  }
 
   &__title {
-    margin:0 0 1em;
+    margin:0;
+  }
+
+  &__desc {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    background:$clrBlue;
+    color:$clrWhite;
+    display:flex;
+    align-items:center;
+    border-radius:0 7px 7px 0;
+    padding:em(5) em(20);
   }
 }

@@ -102,10 +102,23 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 .cp_RepoCard {
   background: #FFF;
   max-width: 43.75em;
-  margin: 0 auto;
-  padding: 0.9375em;
+  margin: 0 auto 1.25em;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
   display: flex; }
+  .cp_RepoCard > * {
+    padding: 0.75em 1.25em; }
+  .cp_RepoCard__details {
+    flex-grow: 1;
+    text-align: left; }
   .cp_RepoCard__title {
-    margin: 0 0 1em; }
+    margin: 0; }
+  .cp_RepoCard__desc {
+    margin-bottom: 0; }
+  .cp_RepoCard__link {
+    background: #4A90E2;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    border-radius: 0 7px 7px 0;
+    padding: 0.3125em 1.25em; }
