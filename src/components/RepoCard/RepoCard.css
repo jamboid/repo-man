@@ -101,8 +101,11 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* != Base Module - Typography */
 .cp_RepoCard {
   background: #FFF;
+  max-width: 43.75em;
+  margin: 0 auto;
   padding: 0.9375em;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; }
+  border-radius: 7px;
+  display: flex; }
   .cp_RepoCard__title {
     margin: 0 0 1em; }
