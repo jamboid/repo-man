@@ -1,10 +1,8 @@
 @import "../../assets/sass/base/all";
 
 .cp_ResultsList {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,  minmax(300px, 1fr));
-  grid-gap:em(30);
+  display:block;
   padding:em(30);
-  margin-top:em(40);
-  background:#D8D8D8;
+  margin:em(40) auto em(20);
+  background:#FAFAFA;
 }

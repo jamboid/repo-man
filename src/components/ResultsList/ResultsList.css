@@ -100,9 +100,7 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* != Framework Module - flex */
 /* != Base Module - Typography */
 .cp_ResultsList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1.875em;
+  display: block;
   padding: 1.875em;
-  margin-top: 2.5em;
-  background: #D8D8D8; }
+  margin: 2.5em auto 1.25em;
+  background: #FAFAFA; }
