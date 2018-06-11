@@ -1,6 +1,4 @@
 // API Module
-
-
 function handleError(res) {
   return res.ok ? res : Promise.reject(res.statusText);
 }
@@ -9,7 +7,7 @@ function handleContentType(response) {
   const contentType = response.headers.get('content-type');
 
   if (contentType && contentType.includes('application/json')) {
-      return response.json();
+    return response.json();
   }
 
   return Promise.reject('Oops, we haven\'t got JSON!');
@@ -28,7 +26,9 @@ function processData(rawData) {
     processedRepo.id = rawRepo.id;
     processedRepo.name = rawRepo.name;
     processedRepo.description = rawRepo.description;
-    processedRepo.url = rawRepo.html_url;
+    processedRepo.url = rawRepo.html_url; 
+    processedRepo.watchers = rawRepo.watchers_count;
+    processedRepo.stars = rawRepo.stargazers_count;
 
     processedData.push(processedRepo);
   }
@@ -48,8 +48,8 @@ export function getJSON(query) {
   .then(handleError)
   .then(handleContentType)
   .then(processData)
-  .catch((err) => {
-    console.log(err);
+  .catch(error => {
+    console.log(error);
   });
 }
 
