@@ -1,5 +1,5 @@
 // QueryBuilder Module
-const githubQueryBasePrefix = 'http://api.github.com/users/';
+const githubQueryBasePrefix = 'https://api.github.com/users/';
 const githubQueryBaseSuffix = '/repos';
 
 // Abstract Ajax Get function

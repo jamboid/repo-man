@@ -99,10 +99,14 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* !== Media Query mixin - includes Retina display */
 /* != Framework Module - flex */
 /* != Base Module - Typography */
+body {
+  background: #F3F3F3; }
+
 .cp_App {
   text-align: center; }
   .cp_App__header {
-    background: #FFF; }
+    background: #FFF;
+    padding: 10px 0 2.5em; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

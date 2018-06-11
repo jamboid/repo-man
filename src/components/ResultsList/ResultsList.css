@@ -101,6 +101,5 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
 /* != Base Module - Typography */
 .cp_ResultsList {
   display: block;
-  padding: 1.875em;
-  margin: 2.5em auto 1.25em;
-  background: #FAFAFA; }
+  padding: 2.5em 1.25em;
+  background: #F3F3F3; }

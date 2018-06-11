@@ -1,10 +1,15 @@
 @import "./assets/sass/base/all";
 
+body {
+  background:$clrOffWhite;
+}
+
 .cp_App {
   text-align: center;
 
   &__header {
     background:$clrWhite;
+    padding:10px 0 em(40);
   }
 }
 

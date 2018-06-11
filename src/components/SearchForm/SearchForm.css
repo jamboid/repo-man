@@ -107,6 +107,7 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
     font-size: 1.125em;
     -webkit-appearance: none;
     padding: 0.5em 0.9375em;
+    margin: 0;
     box-shadow: none;
     border: 2px solid #4A90E2; }
   .cp_SearchForm__text {

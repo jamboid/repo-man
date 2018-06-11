@@ -1,6 +1,8 @@
 @import "../../assets/sass/base/all";
 
 .cp_RepoCard {
+  $self: &;
+
   background:$clrWhite;
   max-width:em(700);
   margin:0 auto em(20);
@@ -9,7 +11,7 @@
   display: flex;
 
   > * {
-    padding:em(12) em(20);
+    padding:em(12) em(15);
   }
 
   &__details {
@@ -19,10 +21,32 @@
 
   &__title {
     margin:0;
+    color:$clrGrey;
   }
 
   &__desc {
-    margin-bottom: 0;
+    margin:em(5) 0 0;
+    color:$clrLightGrey;
+  }
+
+  &__stars {
+    @include flexBase;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:$clrGrey;
+    color:$clrWhite;
+  }
+
+  &__starsIcon {
+
+  }
+
+  &__starsTotal {
+    font-size:em(20);
+    font-weight:$bold;
+    margin:em(4,20) 0 0;
+    min-width:50px;
   }
 
   &__link {
@@ -32,5 +56,20 @@
     align-items:center;
     border-radius:0 7px 7px 0;
     padding:em(5) em(20);
+
+
+    &:hover, &:focus, &:active {
+      #{ $self }__linkIcon {
+        opacity: 1;
+        transform:scale(1);
+      }
+    }
+  }
+
+  &__linkIcon {
+    opacity: 0.5;
+    transition:all 0.2s ease-in-out;
+    transform:scale(0.8);
+    transform-origin:center left;
   }
 }

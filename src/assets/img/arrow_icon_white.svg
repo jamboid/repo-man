@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_icon_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Desktop" transform="translate(-714.000000, -298.000000)" stroke="#FFFFFF" stroke-width="5">
+            <g id="arrow_icon_white" transform="translate(731.395184, 315.566757) rotate(-360.000000) translate(-731.395184, -315.566757) translate(715.895184, 300.566757)">
+                <polyline id="Path-3" stroke-linejoin="round" transform="translate(15.823319, 14.823319) rotate(-315.000000) translate(-15.823319, -14.823319) " points="5.34160884 4.34169016 26.3050284 4.34169016 26.3050284 25.304947"></polyline>
+                <path d="M28.0208243,15 L0.763589604,15" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
