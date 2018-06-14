@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="23px" height="22px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>star_icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(-637.000000, -293.000000)" fill="#FFCF00">
-            <g id="card" transform="translate(259.000000, 280.000000)">
-                <g id="component/card-star-rating" transform="translate(358.000000, 0.000000)">
-                    <polygon id="star_icon" points="31.5 29.9369189 24.3926091 35 26.9840681 26.637048 20 21.4032522 28.7090006 21.2977448 31.5 13 34.2909994 21.2977448 43 21.4032522 36.0159319 26.637048 38.6073909 35"></polygon>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="23" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 16.937L4.393 22l2.591-8.363L0 8.403l8.709-.105L11.5 0l2.791 8.298L23 8.403l-6.984 5.234L18.607 22z" fill="#FFCF00" fill-rule="evenodd"/></svg>
