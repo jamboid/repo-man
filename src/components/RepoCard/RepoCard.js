@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import star from '../../assets/img/star_icon.svg'
-import arrow from '../../assets/img/arrow_icon_white.svg'
 
 import './RepoCard.css';
 
@@ -19,7 +17,6 @@ function RepoCard(props) {
       <a className="cp_RepoCard__link" href={props.url} target="_blank">
         <svg className="cp_RepoCard__linkIcon" width="36" height="35" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="5" fill="none" fill-rule="evenodd" stroke-linecap="round"><path stroke-linejoin="round" d="M17.718 2.567L32.542 17.39 17.719 32.213"/><path d="M29.916 17.567H2.659"/></g></svg>
       </a>
-
     </div>
   );
 }

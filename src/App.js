@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className="cp_App">
         <header className="cp_App__header">
-          <Logo></Logo>
+          <Logo />
           <SearchForm onSearch={this.handleSearchSubmit} onChange={this.handleSearchChange} fieldTextPlaceholder={'Enter a username...'} />
         </header>
         <ResultsList results={this.state.queryresults} />
