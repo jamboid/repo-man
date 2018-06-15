@@ -103,3 +103,10 @@ Parameters: @pixels value (no units), optional @context value (no units) e.g. if
   margin: 1.25em auto; }
   .cp_Logo__image {
     max-width: 50vw; }
+  .cp_Logo h1 {
+    margin-bottom: 0; }
+  .cp_Logo h2 {
+    font-size: 1.125em;
+    font-weight: lighter;
+    color: #999;
+    margin: 0 0 1.5em; }
