@@ -1,6 +1,16 @@
 // API Module
-function handleError(res) {
-  return res.ok ? res : Promise.reject(res.statusText);
+function handleError(response) {
+  return response.ok ? response : Promise.reject(response.statusText);
+}
+
+function handleStatus(response) {
+  console.log(response);
+
+  if(response.status === 404) {
+    return Promise.reject('404');
+  } else {
+    return response;
+  }
 }
 
 function handleContentType(response) {
@@ -27,7 +37,7 @@ function processData(rawData) {
     processedRepo.name = rawRepo.name;
     processedRepo.description = rawRepo.description;
     processedRepo.url = rawRepo.html_url;
-    processedRepo.watchers = rawRepo.watchers_count; 
+    processedRepo.watchers = rawRepo.watchers_count;
     processedRepo.stars = rawRepo.stargazers_count;
 
     processedData.push(processedRepo);
@@ -46,6 +56,7 @@ export function getJSON(query) {
     simple: true
   })
   .then(handleError)
+  //.then(handleStatus)
   .then(handleContentType)
   .then(processData)
   .catch(error => {
