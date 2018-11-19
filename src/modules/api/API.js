@@ -56,7 +56,7 @@ export function getJSON(query) {
     simple: true
   })
   .then(handleError)
-  //.then(handleStatus)
+  .then(handleStatus)
   .then(handleContentType)
   .then(processData)
   .catch(error => {
