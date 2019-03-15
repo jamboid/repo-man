@@ -28,6 +28,8 @@ class App extends Component {
       getJSON(buildGithubAPIQuery(this.state.username))
       .then(results => {
         this.setState({'queryresults': results});
+
+        console.log(this.state);
       })
       .catch((err) => {
         console.log(err);
